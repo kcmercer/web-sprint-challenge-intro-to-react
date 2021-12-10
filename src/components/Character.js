@@ -1,21 +1,18 @@
 // Write your Character component here
-// import axios from 'axios';
-// import {useEffect, useState} from 'react';
+import styled from 'styled-components';
 
-// // const [characters, setCharacters] = useState([])
-
-// useEffect(() => {
-//   axios.get(`https://swapi.dev/api/people`)
-//   .then(res => {
-//     console.log(res.data);
-//     setCharacters(res.data.results)
-//    })
-//   }, [])
+const CharacterH2 = styled.h2`
+font-size: 3rem;
+color: #2A9D8F;
+text-shadow: 2px 2px black;
+text-align: left;
+margin-left: 5%;
+`
 
 function NewCharacters(props) {
   return (
     <div>
-      <h2>{props.name}</h2>
+      <CharacterH2>{props.name}</CharacterH2>
     </div>
   );
 }

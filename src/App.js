@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
-import { NewCharacters } from './components/Character'
+import { NewCharacters } from './components/Character';
+import styled from 'styled-components';
 // import rest from 'msw';
 
  // Try to think through what state you'll need for this app before starting. Then build out
